@@ -3,7 +3,7 @@
 
 ##### App feito com React Native e Expo, consumindo os dados da API <a href="https://brasil.io">Brasil.io</a>
 
-<img src="print.jpeg" width="250" style="border-radius: 15px">
+<img src="print.jpeg" width="250">
 
 </div>
 
