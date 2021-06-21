@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
     height: 130,
     width: 130,
     borderRadius: 30,
-    padding: 15,
-    marginLeft: 20,
+    padding: 10,
+    marginLeft: 10,
   },
   col: {
     flexDirection: "row",
@@ -50,10 +50,12 @@ const styles = StyleSheet.create({
     marginTop: 30,
     color: "#010101",
     fontWeight: "bold",
-    fontSize: 12,
+    fontSize: 15,
+    alignSelf: "center"
   },
   number: {
     fontWeight: "bold",
     fontSize: 22,
+    alignSelf: "center"
   },
 });

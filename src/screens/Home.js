@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, StatusBar } from "react-native";
+import { View, Text, StyleSheet, StatusBar, Button } from "react-native";
 import { FlatList, ScrollView } from "react-native-gesture-handler";
 import Cards from "../components/Cards";
 import axios from "axios";
 
-export default function Home() {
+export default function Home({navigation}) {
   let url =
     "https://api.brasil.io/v1/dataset/covid19/caso/data/?is_last=True&state=PA";
   let token = "36ebf67e9b4996dece53cc43683fa3bdf8d0d82e";
@@ -29,6 +29,9 @@ export default function Home() {
     <View style={styles.container}>
       <StatusBar hidden />
       <Text style={styles.textDash}>RELATÓRIO COVID 19</Text>
+      <View style={styles.viewNacional}>
+      <Button color="#2b3240" title="Dados Nacionais" onPress={() => navigation.navigate('Nacional')}/>
+      </View>
       <Text style={styles.att}> Última atualização: {para.date}</Text>
 
       <View style={styles.colContainer}>
@@ -37,7 +40,6 @@ export default function Home() {
       <View>
         <ScrollView showsHorizontalScrollIndicator={false} horizontal>
           <Cards
-            onPress={() => this.props.navigation.navigate("Detail")}
             icon="md-pulse"
             title="CONFIRMADOS"
             bg="#f1404b"
@@ -74,7 +76,7 @@ export default function Home() {
                     textTransform: "uppercase",
                   }}
                 >
-                  {item.city }
+                  {item.city}
                 </Text>
                 <View style={styles.itensList}>
                   <Text
@@ -235,5 +237,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
     flexWrap: "wrap",
+  },
+  viewNacional: {
+    color: "#010101",
+    backgroundColor: "#fff1ac",
+    borderRadius: 30,
+    marginLeft: 80,
+    marginRight: 80,
+    marginTop: 10,
   },
 });
