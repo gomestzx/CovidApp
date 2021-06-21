@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, StatusBar, Button } from "react-native";
 import { FlatList, ScrollView } from "react-native-gesture-handler";
 import Cards from "../components/Cards";
-import CardNacional from "../components/CardNacional";
 import axios from "axios";
 
 export default function Home({navigation}) {
@@ -82,97 +81,97 @@ export default function Home({navigation}) {
       <Text style={styles.textConfirmed}>Casos confirmados:</Text>
       <View>
         <ScrollView showsHorizontalScrollIndicator={false} horizontal>
-          <CardNacional 
+          <Cards 
             title="ACRE"
             bg="#D0DFE6"
             number={ac.confirmed}
           />
-          <CardNacional 
+          <Cards 
             title="ALAGOAS"
             bg="#D0DFE6"
             number={al.confirmed}
           />
-          <CardNacional
+          <Cards
             title="AMAZONAS"
             bg="#D0DFE6"
             number={am.confirmed}
           />
-          <CardNacional
+          <Cards
             title="AMAPÁ"
             bg="#D0DFE6"
             number={ap.confirmed}
           />
-          <CardNacional
+          <Cards
             title="BAHIA"
             bg="#D0DFE6"
             number={bh.confirmed}
           />
-          <CardNacional
+          <Cards
             title="DISTRITO FEDERAL"
             bg="#D0DFE6"
             number={df.confirmed}
           />
-          <CardNacional
+          <Cards
             title="ESPIRITO SANTO"
             bg="#D0DFE6"
             number={es.confirmed}
           />
-          <CardNacional
+          <Cards
             title="GOIANIA"
             bg="#D0DFE6"
             number={go.confirmed}
           />
-          <CardNacional
+          <Cards
             title="MARANHÃO"
             bg="#D0DFE6"
             number={ma.confirmed}
           />
-          <CardNacional
+          <Cards
             title="MINAS GERAIS"
             bg="#D0DFE6"
             number={mg.confirmed}
           />
-          <CardNacional
+          <Cards
             title="MT"
             bg="#D0DFE6"
             number={mt.confirmed}
           />
-          <CardNacional
+          <Cards
             title="PARÁ"
             bg="#D0DFE6"
             number={pa.confirmed}
           />
-          <CardNacional
+          <Cards
             title="PARAÍBA"
             bg="#D0DFE6"
             number={pb.confirmed}
           />
-          <CardNacional
+          <Cards
             title="PERNAMBUCO"
             bg="#D0DFE6"
             number={pe.confirmed}
           />
-          <CardNacional
+          <Cards
             title="PIAUÍ"
             bg="#D0DFE6"
             number={pi.confirmed}
           />
-          <CardNacional
+          <Cards
             title="PARANÁ"
             bg="#D0DFE6"
             number={pr.confirmed}
           />
-          <CardNacional
+          <Cards
             title="RIO DE JANEIRO"
             bg="#D0DFE6"
             number={rj.confirmed}
           />
-          <CardNacional
+          <Cards
             title="RONDÔNIA"
             bg="#D0DFE6"
             number={ro.confirmed}
           />
-          <CardNacional
+          <Cards
             title="RIO GRANDE DO SUL"
             bg="#D0DFE6"
             number={rs.confirmed}
@@ -185,9 +184,9 @@ export default function Home({navigation}) {
       </Text>
       <Text style={styles.titleView2}>EQUIPE</Text>
       <Text style={styles.titleView2}>FELIPE MATHEUS</Text>
-      <Text style={styles.titleView2}>PAULA CHRISTIANE</Text>
-      <Text style={styles.titleView2}>JOÃO PAULO</Text>
-      <Text style={styles.titleView2}>JOSÉ PEDRO</Text>
+      <Text style={styles.titleView2}>PAULA JATENE</Text>
+      <Text style={styles.titleView2}>JOÃO PEDRO</Text>
+      <Text style={styles.titleView2}>JOSÉ PAULO</Text>
       <Text style={styles.titleView2}>MARCELO VINÍCIUS</Text> 
       <Text style={styles.titleView2}>MARCELO GIOVANE</Text>  
       <Text style={styles.titleView2}>MÁRIO FERNANDES</Text>   
