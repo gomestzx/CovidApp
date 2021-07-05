@@ -30,7 +30,6 @@ export default function Home({navigation}) {
       <StatusBar hidden />
       <Text style={styles.textDash}>RELATÓRIO COVID 19</Text>
       <View style={styles.viewNacional}>
-      <Button color="#2b3240" title="Dados Nacionais" onPress={() => navigation.navigate('Nacional')}/>
       </View>
       <Text style={styles.att}> Última atualização: {para.date}</Text>
 
